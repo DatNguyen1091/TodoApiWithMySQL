@@ -1,0 +1,21 @@
+SQL: Là một ngôn ngữ lập trình dùng để truy xuất và quản lý cơ sở dữ liệu quan hệ. Nó dùng để để thực hiện các thao tác trên cơ sở dữ liệu như truy vấn, chỉnh sửa dữ liệu.
+
+Cơ sở dữ liệu quan hệ: Là một cấu trúc dữ liệu dựa trên mô hình quan hệ mà trong đó dữ liệu được tổ chức theo các bảng, hàng, cột. Mỗi bảng đại diện cho một đối tượng hoạc một thông tin và mỗi hàng, cột lại đại diện cho một bản ghi của đối tượng đó hoạc thông tin. 
+
+Hệ quản trị cơ sở dữ liệu: Là một phần mền dùng để quản lý và tổ chức thông tin và dữ liệu trong cơ sở dữ liệu. Cho phép thêm, sửa, xóa dữ liệu cũng như cung cấp các công cụ tìm kiếm và truy xuất thông tin từ cơ sở dữ liệu. Nó thường được dùng trong các cơ sở dữ liệu lớn, phức tạp và có tính tương tác cao. Cung cấp khả năng truy cập và đảm bảo tính toàn vẹn của dữ liệu, bảo mật và quản lý quyền truy cập của người dùng, cũng như sao lưu và khôi phục dữ liệu trong trường hợp có sự cố.
+
+Table: Là nơi chứa các thông tin. Mỗi table bao gồm tên table, danh sách cột, khóa chính, khóa ngoại.
+
+Record/row: Là từng mục riêng lẻ tồn tại trong một bảng, nơi chứa dữ liệu đưa vào các bảng và cấu trúc của dữ liệu định sẳn.
+
+Khoá chính: Trong một bảng cột được chỉ định là khóa chính thì nó là duy nhất, có giá trị không đổi và được sử dụng để định danh duy nhất mỗi hàng trong bảng đó.
+
+Khoá ngoại: Là một thuộc tính hoặc tập hợp các thuộc tính trong bảng dữ liệu này, tham chiếu đến khóa chính của một bảng khác. Khóa ngoại được sử dụng để xác định mối quan hệ giữa hai bảng trong cơ sở dữ liệu.
+
+Index: Là một cấu trúc dữ liệu giúp xác định nhanh chóng các records trong table. Nếu không có index thì SQL phải quét toàn bộ bảng để tìm được các bản ghi có liên quan. Dữ liệu càng lớn, tốc độ truy vấn sẽ càng chậm.
+
+Quan hệ 1-1: Là mối quan hệ duy nhất, xác định khi mỗi bản ghi trong bảng này tương ứng với duy nhất một bản ghi trong bảng khác, và ngược lại. Điều này có nghĩa là, mỗi giá trị của cột trong bảng 1 chỉ tương ứng với một giá trị trong cột của bảng 2, và ngược lại. Ví dụ, một người chỉ có duy nhất một số căn cước.
+
+Quan hệ 1-n: Là một loại quan hệ giữa hai bảng dữ liệu, trong đó một bản ghi trong bảng này có thể được liên kết với nhiều bản ghi trong bảng kia. Ví dụ, một khách hàng có thể có nhiều đơn hàng, một sản phẩm có thể được bán trong nhiều đơn hàng khác nhau.
+
+Quan hệ n-n: Là một loại quan hệ giữa hai bảng trong đó mỗi bản ghi trong bảng thứ nhất có thể liên kết với nhiều bản ghi trong bảng thứ hai và ngược lại. Để thể hiện một mối quan hệ nhiều đối nhiều, thì phải tạo ra một bảng thứ ba, bảng này sẽ tách mối quan hệ nhiều đối nhiều thành hai mối quan hệ một đối nhiều. Ví dụ như một hóa đơn có thể chứa nhiều sản phẩm và một sản phẩm có thể có trên nhiều hóa đơn.
